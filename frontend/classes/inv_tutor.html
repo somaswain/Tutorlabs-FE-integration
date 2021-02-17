@@ -1,0 +1,133 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet"href="{%static '/css/classes/inv_tutor.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="work.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Tutor labs</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logos">
+            <div class="brand">
+                Tutor labs
+            </div>
+        </div>
+        </div>
+        <div class="label">
+            <ul>
+                <li><a>Classes</a></li>&emsp;
+                <li><a>My Tutor</a></li>&emsp;
+                <li><a>Reports</a></li>&emsp;
+                <li><a>Messages</a></li>&emsp;
+                <li><img src="Assets/Notification Icon.png" alt="" /></li>
+                <li><img src="C:\Users\Sharath kumar\Documents\sharath\Assest\generic-avatar 3.png" alt="wsedrtfgyhuj" /></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nav"><a href="#in">Classes -></a>
+<a href="#saved">Tutor Profile -></a>
+<a href="#invited">Invite Tutor</a></div>
+
+<div class="main-container">
+            
+<div class="header"><h1>Invite Tutor</h1></div>
+<div class="form"><br>
+<div class="Name">
+    <label><strong>Name </strong></label>
+    <div><input type="text" name="" value="John dawson"></div></div>
+    <br>
+<div class="specification">
+<label><strong>Specification </strong></label>
+<div><input type="text" name="" value="Java developer"></div>
+</div>
+<br>
+<div class="project">
+<label><strong>Project Done</strong></label>
+<div><input type="number" name="" value="5"></div>
+</div>
+<br>
+<div class="skills">
+    <label><strong>Skills</strong></label>
+    <div><input type="text" name="" value="Core java,Angular JS"></div>
+</div>
+<br>
+<div class="freelance"><label><strong>Freelance Description</strong></label>
+<div><input type="text" name="" value="Studied from Harvard university
+    certifications earned :Google certifications,microsoft" ></div>
+</div>
+<br>
+<div class="rate">
+<label><strong>Tutor Rating</strong></label>
+<div>
+<fieldset class="rating">
+
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+</div>
+</div>
+<br>
+<br>
+<div id="msg"><strong>Your Invitation sent successfully!</strong></div><br>
+<br>
+<div class="button">
+<div class="button1">
+      <div> <a href="send_invite"><input type="submit" id="Button1" value="Send invite" onclick="myfunction()" /></a></div>
+</div>
+<script type="text/javascript">
+    function myfunction() {
+         document.getElementById("msg").style.visibility = "visible";
+
+}
+</script> 
+<div class="button1">
+      <div>  <input type="submit" id="Button1" value="Save invite"  /></div>
+</div>
+<div class="button1">
+      <div>  <input type="submit" id="Button1" value="Return to dashboard"  /></div>
+</div>
+<div class="button1">
+      <div>  <input type="submit" id="Button1" value="Modify invitation"  /></div>
+</div>
+</div>
+</div>
+  </div>
+  </div>        
+    <div class="footer ">
+        <ul>
+            <li>Terms and Conditions</li>
+            <li>|</li>
+            <li>Privacy Policy</li>
+            <li>|</li>
+            <li>Help</li>
+            <li>|</li>
+            <li>Tutor Labs Licenses</li>
+            <li>|</li>
+            <li>Partners</li>
+            <li>|</li>
+            <li class="flex ">
+                <label for="Lang ">Language</label>
+                <h4 id="Lang ">English</h4>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

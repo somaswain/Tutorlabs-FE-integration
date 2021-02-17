@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MyTutorInvited Template</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="HeadingBar" class="heading flex inline-block w-full h-16 bg-gray-500">
+      <div id="TutorLabsHeading" class="TutorLabs_Heading w-1/3 h-16 bg-indigo-900 text-3xl text-white pt-4 pl-8">
+        Tutor Labs
+      </div>
+      <div id="MenuButtons" class="MenuButtons justify-evenly flex inline-block w-2/3 h-16 bg-indigo-900">
+        <button id="classes" type="button" class="classes-btn bg-indigo-900 text-white w-24 mt-2 h-14">
+          CLASSES
+        </button>
+        <button id="MyTutor" type="button" class="MyTutor-btn bg-white text-indigo-900 w-24 mt-2 h-14">
+          MY TUTOR
+        </button>
+        <button id="Reports" type="button" class="Reports-btn bg-indigo-900 text-white w-24 mt-2 h-14">
+          REPORTS
+        </button>
+        <button id="Messages" type="button" class="Meassages-btn bg-indigo-900 text-white w-24 mt-2 h-14">
+          MESSAGES
+        </button>
+        <button id="NotificationIcon" type="button" class="Notification-btn w-8 mt-4 h-8">
+          <img src="./Assests/message.png" />
+        </button>
+        <button id="profileIcon" type="button" class="Profile-btn bg-indigo-900 w-8 mt-4 h-8">
+          <img src="./Assests/avatar.png" />
+        </button>
+      </div>
+    </div>
+    <div id="SubMenu" class="SubMenu my-4 w-1/3 mx-8 flex justify-between">
+      <a id="InProgressLink" class="InprogressLink text-indigo-900" href="in_progress">In Progress</a>
+      <a id="SavedLink" class="SavedLink text-indigo-900" href="saved">Saved</a>
+      <a id="AppledLink" class="AppliedLink text-indigo-900" href="applied">Applied</a>
+      <a id="InvitedLink" class="InvitedLink text-indigo-900 underline text-xl font-semibold" href="invite">Invited</a>
+    </div>
+    <div id="TeacherProfile1" class="TeacherProfile1 mx-8">
+      <div id="Teacher1Name" class="Teacher1Name bg-indigo-200 w-full h-20 rounded py-6 px-4 font-bold text-xl">
+        John Dawson-JAVA developer
+      </div>
+      <p id="Teacher1Info" class="Teacher1Info w-full px-4 pt-4 pb-8 border-l-2 border-r-2 border-b-2">
+        I have a python script that admits inputs (the file is attached).
+        <br />
+        <br />
+        Based on these inputs, the script generates word file.
+        <br />
+        <br />
+        I'm looking for a python developer with Flask skills to create the
+        following we ap:
+        <br />
+        1) Login form with id and password (autorized users must be added from
+        back, no account creation from front).
+        <br />
+        2)Input form (name = free field, yes/no = check button).
+        <br />
+        3) Generation of the file with download link.
+      </p>
+      <div id="InviteFunctionBtns" class="InviteFunctionBtns flex justify-evenly py-4">
+        <button id="DeleteInviteBtn" type="button" class="DeleteInviteBtn bg-indigo-400 rounded-full px-6 py-1 text-white font-semibold">
+          Delete Invite
+        </button>
+        <button id="ModifyInviteBtn" type="button" class="ModifyInviteBtn bg-indigo-400 rounded-full px-6 py-1 text-white font-semibold">
+          Modify Invite
+        </button>
+        <button id="WithdrawlBtn" type="button" class="WithdrawlBtn bg-indigo-400 rounded-full px-6 py-1 text-white font-semibold">
+          Withdrawl
+        </button>
+      </div>
+    </div>
+    <div id="TeacherProfile2" class="TeacherProfile1 mx-8">
+      <div id="Teacher2Name" class="Teacher2Name bg-indigo-200 w-full h-20 rounded py-6 px-4 font-bold text-xl">
+        Muskaan Laungani - Front-end developer
+      </div>
+      <p id="Teacher2Info" class="Teacher2Info w-full px-4 pt-4 pb-8 border-l-2 border-r-2 border-b-2">
+        Looking to develop a seires of targeted web scrapers to extract and
+        structure information from different websites (e.g., a database of
+        academic journal articles, news and media content).
+        <br />
+        Each project likely a short one-off, but there may be oppurtunities to
+        work long term on patching together different tools.
+        <br />
+        <br />
+        You will be asked to answer the following questions when submitting a
+        proposa:
+        <br />
+        <br />
+        &emsp; Do you have suggestions to make this project run successfully?
+        <br />
+        &emsp; What past project or job have you had that is most like this one
+        and why?
+      </p>
+      <div id="InviteFunctionBtns" class="InviteFunctionBtns flex justify-evenly py-4">
+        <button id="DeleteInviteBtn" type="button" class="DeleteInviteBtn bg-indigo-400 rounded-full px-6 py-1 text-white font-semibold">
+          Delete Invite
+        </button>
+        <button id="ModifyInviteBtn" type="button" class="ModifyInviteBtn bg-indigo-400 rounded-full px-6 py-1 text-white font-semibold">
+          Modify Invite
+        </button>
+        <button id="WithdrawlBtn" type="button" class="WithdrawlBtn bg-indigo-400 rounded-full px-6 py-1 text-white font-semibold">
+          Withdrawl
+        </button>
+      </div>
+    </div>
+  </body>
+  <footer id="PageFooter" class="PageFooter flex inline-block justify-evenly h-12 py-4 bg-gray-200">
+    <a href="#">Terms and Conditions</a>
+    <p>|</p>
+    <a href="#">Privacy Policy</a>
+    <p>|</p>
+    <a href="#">Help</a>
+    <p>|</p>
+    <a href="#">Tutorlabs Licenses</a>
+    <p>|</p>
+    <a href="#">Partners</a>
+    <p class="Language text-gray-600">LANGUAGE</p>
+    <select id="Language" class="Language bg-gray-200 pb-2 h-8">
+      <option value="default">English</option>
+      <option value="Kan">Kannada</option>
+    </select>
+  </footer>
+</html>

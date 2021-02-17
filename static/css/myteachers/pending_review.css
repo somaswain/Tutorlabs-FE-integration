@@ -1,0 +1,172 @@
+<style type="text/css">
+        body{
+            font-family: montserrat;
+        }
+        section{
+            width: 18%;
+            float: left;
+            height: 250px;
+            background: aliceblue;
+            padding-left: 35px;
+            padding-top: 80px;
+            font-family: ;
+            text-decoration-color: blue;
+            color: blue;
+            margin-top: 50px;
+            margin-left: 40px;
+            font-weight: bold;
+            
+        }
+        .amt{
+            color: coral;
+            
+        }
+        .button a{
+            position: relative;
+            display: inline-block;
+            padding: 10px 5px;
+            margin: 25px 0px;
+            color: white;
+            background: blue;
+            border-radius: 21px;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        hr{
+            color: black;
+            margin: 15px 0px;
+            margin-right: 19px;
+            
+        }
+        .pag{
+            width: 100%;
+            margin-top: 5px;
+            margin-left: 50px;
+            color: blue;
+            
+        }
+        .pag1{
+            margin-left: 42px;
+            padding: 30px 0px;
+            padding-left: 2px;
+            font-size: 21px;
+            font-family: sans-serif;
+        }
+        .new{
+            margin-left: 81px;
+            margin-top: 5px;
+            padding-top: 45px;
+            font-family: sans-serif;
+            color: blue;
+        }
+        .right{
+            position: absolute;
+            width: 900px;
+            height: 280px;
+            background: #E2EDFF;
+            border: 1px solid #E0DEDE;
+            box-sizing: border-box;
+            border-radius: 2px;
+            margin-left: 380px;
+        }
+        .new1{
+            position: absolute;
+            display: inline-block;
+            width: 340px;
+            height: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 15px;
+            color: #343C82;
+            margin-left: 18px;
+            margin-top: 5px;
+            padding-left: 2px;
+
+        }
+        .Rectangle{
+            position: absolute;
+            width: 570px;
+            height: 228px;
+            background: #FFFFFF;
+            margin: 25px 18px 0px 0px;
+            margin-left: 20px;
+            font-family: montserrat;
+        }
+        .r{
+            font-family: montserrat;
+            font-size: 17px;
+            margin-left: 8px;
+            
+        }
+        .r1{
+            font-family: montserrat;
+            font-size: 17px;
+            margin-left: 8px;
+            margin-top: 50px;
+            
+        }
+        .Rectangle1{
+            float: right;
+width: 260px;
+height: 228px;
+
+background: #FFFFFF;
+            margin-top: 25px;
+            margin-right: 25px;
+            
+        }
+        .amtsec{
+            margin-top: 15px;
+            margin-left: 10px;
+            font-family: verdana;
+            font-weight: bold;
+        }
+        .sec2{
+            margin-top: 232px;
+            margin-right: 25px;
+            margin-left: 
+            width: 20px;
+            height: 5px;
+            font-weight: bold;
+            background: none;
+        }
+        .right-down{
+            float: right;
+            position: absolute;
+width: 893px;
+height: 230px;
+
+background: #E2EDFF;
+border: 1px solid #E0DEDE;
+box-sizing: border-box;
+border-radius: 2px;
+            margin-top: 340px;
+            margin-left: 380px;
+            
+            
+        }
+        .Rectangle2{
+            position: absolute;
+            width: 570px;
+            height: 188px;
+            background: #FFFFFF;
+            margin: 25px 18px 0px 0px;
+            margin-left: 20px;
+            font-family: montserrat;
+            font-size: 16px;
+        }
+        .r2{
+            margin-left: 15px;
+        }
+        .Rectangle3{
+            float: right;
+width: 260px;
+height: 188px;
+
+background: #FFFFFF;
+            margin-top: 25px;
+            margin-right: 25px;
+            
+        }

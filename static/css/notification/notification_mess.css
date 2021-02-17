@@ -1,0 +1,120 @@
+.Rectangle{
+    position: absolute;
+width: 1180px;
+height: 550px;
+
+background: #FFFFFF;
+border: 1px solid #E0DEDE;
+box-sizing: border-box;
+    margin: 50px 50px;
+}
+section{
+    position: absolute;
+width: 250px;
+height: 550px;
+
+background: #E2EDFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none; 
+    list-style: none;
+    box-sizing: border-box;
+    }
+ul li{
+    display: block;
+        margin-left: 18px;
+        padding: 45px 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+        
+         
+    }
+ul li a{
+        font-family: verdana;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+}
+.right{
+    float: right;
+    width: 181px;
+    padding: 25px 0px;
+    margin-right: 700px;
+    font-weight: bold;
+    font-size: 20px;
+    color: blue;
+    
+
+
+    
+}
+hr{
+    width: 820px;
+    
+}
+.right-down{
+    float: right;
+width: 810px;
+height: 180px;
+    margin-right: 70px;
+
+background: #FFFFFF;
+border: 1px solid #E0DEDE;
+box-sizing: border-box;
+}
+.cont{
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.par{
+    padding-left: 10px;
+}
+.button{
+    
+width: 144px;
+height: 28px;
+
+background: #343C82;
+border-radius: 50px;
+text-decoration-color: white;
+    margin: 30px 85px;
+    padding-left: 55px;
+    padding-top: 5px;
+}
+.button a{
+    color: white;
+}
+.button1{
+    float: right;
+    
+width: 144px;
+height: 28px;
+background: #343C82;
+border-radius: 50px;
+    margin-right: 125px;
+    margin-top: -53px;
+    margin-left:-70px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.button1 a{
+    padding: 5px 5px;
+    color: white;
+}
+.right-down1{
+    position: absolute;
+    width: 810px;
+height: 180px;
+
+
+background: #FFFFFF;
+border: 1px solid #E0DEDE;
+box-sizing: border-box;
+    margin-top: 310px;
+    margin-left: 301px;
+
+}

@@ -1,0 +1,261 @@
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,Bootstrap which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser supported, best quality world class designs. -->
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TutorLabs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </link>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="{%static '/css/classes/post_class.css' %}">
+
+
+</head>
+<script>
+    var getFileName = function() {
+        var x = document.getElementById('entry_value')
+        document.getElementById('fileName').innerHTML = x.value.split('\\').pop()
+    }
+</script>
+<body>
+    <header>
+        <!-- <div class="container" id="top">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                    <ul class=" list-group list-group-horizontal">
+                        <li><i class='fas fa-envelope-open pr-2'></i><a href="#" class="pr-5"> Admin@mail.com</a></li>
+                        <li><i class='fas fa-phone pr-2'></i><a href="#" class="pr-3"> +12 365 4789</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 text-left">
+                    <i class='fab fa-facebook'></i>
+                    <i class='fab fa-twitter-square'></i>
+                    <i class='fab fa-google-plus-square'></i>
+                </div>
+            </div>
+        </div> -->
+        <nav class="navbar navbar-expand-md navbar-dark ownbg">
+            <a class="navbar-brand text-white pl-5" href="#">Tutor Labs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CLASSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MY TUTOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">REPORTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MESSAGES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--inner body content-->
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+        <div class="card card0 border-0">
+            <div class="bg-blue py-4" style="height: 1em;">
+                <div class="row px-3" style="margin-top: -0.8em;">
+                    <div class="col-sm-10">
+                        <h4 class="ml-4 ml-sm-5 mb-2">Post a New Class</h4>
+                    </div>
+
+                    <div class="col-sm-2 pull-right"><i class="fa fa-window-close cls-btn" aria-hidden="true"></i></div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card2 card border-0 px-4 py-5">
+
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Agence</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Agence">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Tag</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>-- SELECT TAG --</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Job Category</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>-- SELECT CATEGORY --</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Job Description</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="inputMessage" placeholder="Job Description" required=""></textarea> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Skills</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>-- SELECT SKILLS --</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Job Description</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group form">
+                                    <input name="file" id="entry_value" ref="fileInput" type="file" placeholder="dRAG" onchange="getFileName()">
+                                    <div>
+
+                                        <img src="upload.png" alt="upload" width="7%" class="mx-2"> Upload your files here or
+                                        <button class="btn bg-color-dblue btn-primary px-4 py-3">Browse</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Send</button>
+                        </div> -->
+                        <div id=buttonbelow class="row">
+                            <div class="col-sm-4 pull-left">
+                                <button type="button" class="btn btn-primary btn-sm ">Post The Job</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-primary btn-sm">Save To Draft</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-primary btn-sm">Delete The Job</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+                    <!-- end input field -->
+
+                    <!-- <div class="row px-3 mb-4">
+                            <div class="line"></div> <small class="or text-center">Or</small>
+                            <div class="line"></div>
+                        </div>  -->
+                    <!-- <div class="row px-3"> <label class="mb-1">
+                <h6 class="mb-0 text-sm">Email Address</h6>
+              </label> <input class="mb-4" type="text" name="email" placeholder="Enter a valid email address"> </div>
+                        <div class="row px-3"> <label class="mb-1">
+                <h6 class="mb-0 text-sm">Password</h6>
+              </label> <input type="password" name="password" placeholder="Enter password"> </div>
+                        <div class="row px-3 mb-4">
+                            <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                        </div>
+                        <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center">Login</button> </div>
+                        <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a
+                  class="text-danger ">Register</a></small> </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row" style="margin-top: -0.5em;">
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-1">&nbsp;</div>
+                    <div class="col-sm-3 bdr-rht">Terms & Conditions</div>
+                    <div class="col-sm-2 bdr-rht">Privacy Policy</div>
+                    <div class="col-sm-1 bdr-rht">Help</div>
+                    <div class="col-sm-3 bdr-rht">TutorLabs License</div>
+                    <div class="col-sm-2">Partners</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6">LANGUAGE</div>
+                    <div class="col-sm-6" style="margin-top: -0.5em">
+                        <select class="form-control" id="sel1" style="background: #e2e4ea;">
+                            <option>English</option>
+                            <option>Tamil</option>
+                            <option>Telugu</option>
+                            <option>Hindi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  <div class="container">
+            <p>Terms and condition | Privacy Policy | Help | Tutorlabs License | Partners <span>LANGUAGES</span> <select class="form-control" id="sel1">
+                <option>-- SELECT SKILLS --</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select></p>
+        </div> -->
+    </footer>
+
+
+</body>
+
+</html>

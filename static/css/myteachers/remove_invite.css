@@ -1,0 +1,80 @@
+.topnav{
+	width: 100%;
+	background-color: #342d7e;
+	display: block;
+	text-align: left;
+	color: white;
+	padding: 12px;
+	font-size: 33px;
+    float: left;
+    padding-left: 30px;
+	font-family: sans-serif;
+
+}
+.topnav a {
+	
+	text-align: right;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+.topnav a.active {
+	background-color:  #342d7e;
+	color: white;
+
+}
+.topnav a:hover{
+	background-color: white;
+	color: #342d7e;
+}
+.nav{
+	padding-top: 100px;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.nav a{
+	text-decoration: none;
+	padding: 12px;
+	font-size: 16px;
+
+}
+.nav a:hover{
+   font-size: 20px;
+   text-decoration: underline;
+   background-color: white;
+	color: #342d7e;
+	font-weight: bold;
+}
+
+.container{
+	border-right-style: groove;
+	border-left-style: groove;
+	border-bottom-style: groove;
+    margin: 20px;
+	padding: 50px;
+
+}
+.cont header{
+     margin: 20px;
+	background-color: #C2DFFF;
+	padding: 50px;
+	font-weight: bold;
+}
+.button1 {
+	background-color:  #342d7e; 
+}
+	.button2 {
+	background-color:  #342d7e; 
+}
+
+.button{
+	padding: 20px 32px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	margin: 4px 20px;
+	position: relative;
+}

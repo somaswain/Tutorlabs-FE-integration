@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --clr-dark-blue: hsl(234, 43%, 36%);
+  --clr-light-blue: hsl(217, 100%, 94%);
+  --clr-medium-blue: hsl(216, 57%, 43%);
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 824px;
+  margin: 0 auto;
+}
+
+/* ###### */
+/* HEADER */
+/* ###### */
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-dark-blue);
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 5px 50px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: var(--font-bold);
+}
+
+.nav-links li {
+  display: inline-block;
+  /* padding: 12px 8px 24px; */
+  padding: 0 1.5rem;
+  font-size: 12px;
+  font-weight: var(--font-regular);
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .nav-links li a {
+  transition: all 0.3s ease 0s;
+} */
+
+.nav-links > li > a:hover {
+  font-weight: var(--font-regular);
+  background-color: #fff;
+  padding: 0.5rem 0 1.2rem;
+}
+
+header > img {
+  /* width: 100%; */
+  max-width: 41px;
+  max-height: 41px;
+}
+
+.header > * {
+  flex: 1 1 auto;
+}
+
+.logo {
+  flex: 1 1 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 12px 8px 24px;
+  font-size: 12px;
+  font-weight: var(--font-regular);
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links > li > a:hover {
+  font-weight: var(--font-regular);
+  background-color: #fff;
+  color: hsl(0, 0%, 0%);
+  padding: 0.5rem 0 1.2rem;
+  cursor: pointer;
+}
+
+#avatar {
+  /* width: 100%; */
+  max-width: 41px;
+  max-height: 41px;
+}
+
+
+.skillsneeded,
+#frame1 {
+  font-size: 14px;
+  font-weight: var(--font-semi-bold);
+  padding: .75em 0.5em;
+}
+
+.courses > li {
+  font-size: 12px;
+  font-weight: var(--font-medium);
+  line-height: 1.5rem;
+  list-style: none;
+}
+
+/* ############### */
+/* SEARCH BAR LINE */
+/* ############### */
+.searchbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 1rem;
+
+}
+
+#slogan {
+  font-size: 18px;
+  font-weight: var(--font-bold);
+
+}
+
+
+input {
+  width: 384px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0.25em 1em;
+}
+
+#input {
+  position: relative;
+}
+
+::placeholder {
+  font-size: 12px;
+  font-weight: var(--font-medium);
+}
+
+#search-icon {
+  width: 35px;
+  height: 28px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  background-color: var(--clr-medium-blue);
+  border-radius: 0 10px 10px 0;
+  padding: 3px 0 0 8px;
+ }
+
+i {
+  color: var(--clr-light-blue);
+}
+
+#button {
+  padding: 0 1em;
+}
+
+#filter-btn {
+  width: 114px;
+  height: 30px;
+  background-color: var(--clr-medium-blue);
+  color: #fff;
+
+}
+
+
+/* ############################## */
+/* CSS FOR CUSTOM STYLED CHECKBOX */
+/* ############################## */
+.filter_ul {
+  list-style: none;
+}
+
+.filters {
+  border: 1px solid hsl(0, 3%, 77%);
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+    /* margin: 0; */
+    line-height: 0.5;
+  /* border: 1px solid green; */
+}
+
+label {
+  /* border: 2px solid blue; */
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox > span {
+  font-size: 12px;
+  font-weight: var(--font-regular);
+  padding: 0.5rem 0.5rem;
+
+}
+
+.checkbox > input {
+  border: 1px solid hsl(210, 23%, 36%);
+  height: 18px;
+  width: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+
+}
+
+.checkbox > input:checked {
+  /* border: 1px solid hsl(153, 62%, 73%); */
+  background-color: var(--clr-dark-blue);
+}
+
+.checkbox > input:checked + span::before {
+  content: '\2713';
+  display: block;
+  color: #fff;
+  text-align: center;
+  /* border: 1px solid gray; */
+  position: absolute;
+  left: 0.6rem;
+  top: 0.5rem;
+}
+
+.checkbox > input:active {
+  /* border: 2px solid var(--clr-dark-blue); */
+}
+
+.filter-title {
+    font-size: 14px;
+    font-weight: var(--font-semi-bold);
+}
+
+
+.filter-3,
+.filter-4 {
+  position: relative;
+}
+
+.filter-searchicon {
+  background-color: var(--clr-medium-blue);
+  position: absolute;
+  width: 20px;
+  top: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+.filter-searchicon > i {
+  font-size: 12px;
+  padding: 0 0 2px 3px;
+
+}
+
+.filterline {
+  display: block;
+  padding: 5px 0;
+
+
+}
+
+
+/* ################ */
+/* MAIN CONTENT */
+/* ############### */
+
+main > * {
+  margin: 8px;
+}
+
+.wrapper {
+  display: flex;
+  padding: .5rem;
+}
+
+.sidebar {
+  flex: 1 1 auto;
+}
+
+.main-block {
+  flex: 9 1 auto;
+}
+.sidebar {
+  background-color: var(--clr-light-blue);
+  padding: 1em;
+}
+
+.sidebar > ul {
+  padding-left: 1em;
+  font-size: 12px;
+  font-weight: var(--font-medium);
+}
+
+
+/* ################ */
+/* TUTORS INFO AREA */
+/* ################ */
+
+#line-divider {
+  margin-left: 2em;
+}
+
+.tutor-status {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  
+}
+
+.tutor-status > li {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: var(--font-regular);
+}
+
+.tutor {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 5px 5px 20px;
+  padding: 12px;
+  background-color: var(--clr-light-blue);
+}
+
+.tutor > .avatar {
+  flex: 1 1 auto;
+
+}
+.tutor > .tutorinfo {
+  flex: 6 1 auto;
+}
+
+.tutor > .invite-btn {
+  flex: 1 1 auto;
+}
+
+.rating-line {
+  display:  flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: var(--font-regular);
+}
+
+.name {
+  font-size: 12px;
+  font-weight: var(--font-semi-bold);
+} 
+
+.designation {
+  font-size: 10px;
+  font-weight: var(--font-semi-bold);
+}
+
+.skills {
+  font-size: 14px;
+  font-weight: var(--font-semi-bold);
+}
+
+.skill {
+  font-size: 11px;
+  font-weight: var(--font-regular);
+  background-color: hsl(0, 0%, 77%);
+  padding: 2px 5px;
+  /* margin: 2px; */
+}
+
+
+.qualification {
+  margin: 10px 0;
+  font-size: 9px;
+  font-weight: var(--font-regular);
+}
+
+.invite-btn {
+  background-color: var(--clr-medium-blue);
+  width: 100px;
+  height: 24px;
+  /* padding: 5px 20px 20px; */
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: var(--font-bold);
+  border: none;
+
+}
+
+.amount {
+  font-size: 11px;
+  font-weight: var(--font-semi-bold);
+}
+
+
+/* ########### */
+/* FOOTER AREA */
+/* ########### */
+
+footer {
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+}
+
+footer li {
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+  font-size: 11px;
+  font-weight: var(--font-regular);
+}
+
+footer li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer li > a:hover {
+  text-decoration: underline;
+}
+
+.pipe {
+  color: hsl(206, 17%, 73%);
+}
+
+#footer-language {
+  color: hsl(0, 2%, 46%);
+}
+
+

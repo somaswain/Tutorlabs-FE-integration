@@ -1,0 +1,46 @@
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    right: 0px;
+}
+
+.navlinkfont{
+   
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+
+
+color: #FFFFFF;
+
+
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+	font-size: 20px;
+	text-decoration: underline;
+	background-color: white;
+	 color: #0D3451;
+	 font-weight: bold;
+	 
+}
+
+body, wrapper {
+	min-height:100vh;
+ }
+ 
+ .flex-fill {
+	flex:1 1 auto;
+ }
+
+ label{
+	 font-weight: bold;
+	 font-size: larger;
+ }
+
+ 
+
+i{
+	color: rgb(99, 96, 96);
+	font-size: larger;
+}

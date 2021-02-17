@@ -1,0 +1,91 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"href="{%static '/css/myteachers/in_progress.css' %}">
+    <title>My Tutor</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Tutor Labs</div>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">CLASSES</a></li>
+          <li><a href="#">MESSAGES</a></li>
+          <li><a href="#">STATEMENTS</a></li>
+          <li><a href="#">SUPPORT</a></li>
+          <li>
+            <div id="notification-icon">
+              <img src="images/notification-icon.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="images/generic-avatar.svg" alt="user's photo" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <ul class="inprogressline">
+        <a href="in_progress"><li id="inprogress">In Progress</li></a>
+        <a href="saved"><li>Saved</li></a>
+        <a href="applied"><li>Applied</li></a>
+        <a href="invite"><li>Invite</li></a>
+      </ul>
+
+      <section>
+        <div class="tutor-name">John Dawson-JAVA Developer</div>
+        <div class="tutor-description">
+          We have an E-commerce site that has to be developed using core java
+          .The backend is complete based on core java we have our database
+          ready.We are looking for a Java Developer that can work on the Back
+          -end process.
+        </div>
+        <div class="btns">
+          <a href="pending_review"><button>Pay Tutor</button></a><button>Message Tutor</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="tutor-name">Muskaan Laungani-Front end developer</div>
+        <div class="tutor-description">
+          We have a wordpress site, We have a HTML website template as well, we
+          are looking for HTML and CSS designer who can redesign the website in
+          HTML using template and fill contents from wordpress..
+        </div>
+        <div class="btns">
+          <button>Pay Tutor</button><button>Message Tutor</button>
+        </div>
+      </section>
+    </main>
+      <footer>
+        <ul class="footer-items">
+          <li><a href="#">Terms and Conditions</a></li>
+          <li class="pipe">|</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li class="pipe">|</li>
+          <li><a href="#">Hello</a></li>
+          <li class="pipe">|</li>
+          <li><a href="#">TutorLabs Licenses</a></li>
+          <li class="pipe">|</li>
+          <li><a href="#">Partners</a></li>
+          <li class="pipe">|</li>
+          <li id="language">
+            <label for="language">LANGUAGE</label>
+            <select name="language" id="language">
+              <option value="english">ENGLISH</option>
+              <option value="german">GERMAN</option>
+              <option value="french">FRENCH</option>
+            </select>
+          </li>
+        </ul>
+      </footer>
+    
+  </body>
+</html>

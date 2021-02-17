@@ -1,0 +1,58 @@
+#headbar
+{
+	background-color:#3333cc;
+	color: white;
+	padding-top: 0.5%;
+	padding-bottom:;
+}
+
+#head {
+	width: 98%;
+	margin-left:2%;
+	text-align: center;
+	line-height: 1.8;
+}
+
+#head a {
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+	font-family: "Gill Sans", sans-serif;
+}
+
+#head-2 
+{
+	margin-left: 3%;
+}
+
+#head-2 #table-2
+{
+  width: 100%;
+  text-align: center;
+  height:320px;
+}
+
+#bt {
+	 background-color:#3333cc;
+	 color: white;
+	 margin-left: 40%;
+	 font-size:140%;
+	 border-radius:20px;
+	 width:20%;
+	 height:8%;
+}
+
+#head-3
+{
+	width:100%;
+	background-color: #E3EAF0;
+}
+#head-3 #table_5
+{
+	margin-left: 3%;
+	width: 100%;
+	background-color: #E3EAF0;
+}
+
+
+

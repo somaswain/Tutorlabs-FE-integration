@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Message Template</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="HeadingBar" class="heading flex inline-block w-full h-16 bg-gray-500">
+      <div id="TutorLabsHeading" class="TutorLabs_Heading w-1/3 h-16 bg-indigo-900 text-3xl text-white pt-4 pl-8">
+        Tutor Labs
+      </div>
+      <div id="MenuButtons" class="MenuButtons justify-evenly flex inline-block w-2/3 h-16 bg-indigo-900">
+        <button id="classes" type="button" class="classes-btn bg-indigo-900 text-white w-24 mt-2 h-14">
+          CLASSES
+        </button>
+        <button id="MyTutor" type="button" class="MyTutor-btn bg-indigo-900 text-white w-24 mt-2 h-14">
+          MY TUTOR
+        </button>
+        <button id="Reports" type="button" class="Reports-btn bg-indigo-900 text-white w-24 mt-2 h-14">
+          REPORTS
+        </button>
+        <button id="Messages" type="button" class="Meassages-btn bg-white text-indigo-900 w-24 mt-2 h-14">
+          MESSAGES
+        </button>
+        <button id="NotificationIcon" type="button" class="Notification-btn w-8 mt-4 h-8">
+          <img src="./Assests/message.png" />
+        </button>
+        <button id="profileIcon" type="button" class="Profile-btn bg-indigo-900 w-8 mt-4 h-8">
+          <img src="./Assests/avatar.png" />
+        </button>
+      </div>
+    </div>
+    <div id="bodyContent" class="flex display inline-block">
+        <div id="leftSideBar" class="leftSideBar my-4 bg-purple-400 w-1/4 flow-root pb-32">
+        <div id="search" class="searchSec flex mx-2 inline-block flex-wrap content-center my-4 pb-2 border-b-2 border-black">
+            <input id="searchBar" class="searchBar bg-purple-400 placeholder-indigo-900 text-center text-xl font-medium py-4 text-white h-4" placeholder="My Tutors"></input>
+            <button id="searchBtn" class="searchBtn h-8 w-8">
+                <img src="./Assests/searchico.png">
+            </button>
+        </div>
+        <div id="TeacherNames" class="TeacherNames flow-root mx-4">
+            <button id="Teacher1Btn" class="Teacher1Btn w-full py-2 my-2 shadow-2xl border border-black flex flex-wrap content-between rounded-lg">
+                <img src="./Assests/profile.png" class="profImage mx-4 h-8 w-8"/>
+                <p id="Teacher1Name" class="Teacher1Name text-black font-bold ">Cheif Techno Talk</p>
+            </button>
+            <button id="Teacher2Btn" class="Teacher1Btn w-full py-2 my-2 shadow-2xl border border-black flex flex-wrap content-between rounded-lg">
+                <img src="./Assests/profile.png" class="profImage mx-4 h-8 w-8"/>
+                <p id="Teacher2Name" class="Teacher1Name text-black font-bold ">John - Java developer</p>
+            </button>
+            <button id="Teacher3Btn" class="Teacher1Btn w-full py-2 my-2 shadow-2xl border border-black flex flex-wrap content-between rounded-lg">
+                <img src="./Assests/profile.png" class="profImage mx-4 h-8 w-8"/>
+                <p id="Teacher3Name" class="Teacher1Name text-black font-bold ">Smith-Android Dev</p>
+            </button>
+            <button id="Teacher4Btn" class="Teacher1Btn w-full py-2 my-2 shadow-2xl border border-black flex flex-wrap content-between rounded-lg">
+                <img src="./Assests/profile.png" class="profImage mx-4 h-8 w-8"/>
+                <p id="Teacher4Name" class="Teacher1Name text-black font-bold ">Mani-React</p>
+            </button>
+        </div>
+        </div>
+    <div id="chatBox" class="chatBox my-4 w-3/4 flow-root">
+        <div id="chatDisplayName" class="chatDisplaName h-12 pl-4 py-2 flex display inline-block bg-purple-400">
+            <img src="./Assests/avatar.png" class="h-8 w-8 mx-2">
+            <p id="chatName" class="chatName w-full font-semibold">John - Java Developer</p>
+            <button id="moreOptions" type="button" class="moreOptions flex flex-wrap content-end">
+                <img src="./Assests/moreOptions.png" class="h-6 w-8">
+            </button>
+      </div>
+      <div id="messageBox" class="messageBox w-full h-96"></div>
+      <div id="msgInput" class="messageInput bg-gray-300 w-full h-12 py-2 flex display inline-block">
+          <button id="plusBtn">
+              <img src="./Assests/plus.png"class="plusBtn h-8 w-8 mx-8"/>
+          </button>
+          <div id="msgTextBox" class="messageTextBox">
+              <input type="input" class="rounded-full h-8 px-72 bg=white" placeholder="Type Message"></input>
+          </div>
+          <button id="sendBtn" type="button">
+            <img src="./Assests/send.png" class=" mx-4 my-1 h-6 w-6"/>
+          </button>
+      </div>
+    </div>
+    </div>
+   </body>
+</html>

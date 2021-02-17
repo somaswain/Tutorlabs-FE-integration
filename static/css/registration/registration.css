@@ -1,0 +1,140 @@
+.navtext {
+    color: white;
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-options {
+    color: white;
+}
+
+.container {
+    margin-top: 30px;
+    border: 1px solid #E0DEDE;
+    margin-bottom: 30px;
+    font-family: Montserrat;
+
+
+}
+
+.registration-form-section {
+    height: 700px;
+    display: flex;
+}
+
+.registration-form-left {
+    width: 40%;
+    padding: 20px;
+    background-color: #E2EDFF;
+}
+
+.heading-bolder {
+    font-family: Montserrat;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1a2f96;
+}
+
+.heading-bold {
+    color: #1a2f96;
+    font-weight: bolder;
+
+}
+
+.registration-start {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.textarea {
+    font-size: 25px;
+    margin-bottom: 325px;
+
+
+}
+
+/* registration-form-right-side-area */
+
+.registration-form-right {
+    width: 70%;
+    margin: 0 0 0 20px;
+}
+
+.registration--form__account {
+    font-size: 50px;
+    text-align: center;
+}
+
+.registration--form__text {
+    text-align: center;
+    font-size: 25px;
+}
+
+.reg-form-login-link {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.register-form-cover {
+    width: 90%;
+
+}
+
+.reg-form-captcha {
+    margin-left: 150px;
+    display: flex;
+}
+
+.captcha-image {
+    width: 75%;
+    border: 1px solid black;
+}
+
+.captcha-reload {
+    width: 30px;
+    border: 1px solid black;
+}
+
+.btn-submit {
+    width: 80%;
+    border-radius: 100px;
+    height: 50px;
+    background-color: #3062AD;
+    margin-left: 75px;
+    font-size: 20px;
+    border-style: none;
+}
+
+.classreg-form-terms-conditions {
+    margin-top: 10px;
+    margin-left: 180px;
+    width: 400px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100px;
+    margin-top: 50px;
+}
+
+
+.footer-alignment {
+    color: rgba(0, 0, 0, 1);
+
+}

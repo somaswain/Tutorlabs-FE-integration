@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet"href="{%static '/css/reports.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="{%static '/javascript/reports.js' %}" ></script>
+  
+</head>
+<body>
+  <wrapper class="d-flex flex-column">
+    <nav class="navbar navbar-expand-md  " style="background-color:  #0D3451;">
+      <a class="navbar-brand" style="color: white;" href="#">Tutor Labs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">DASHBOARD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">MY CLASSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">REPORTS</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">MESSEGES</a>
+            </li>
+            <li><img src="{% static 'images/generic-avatar 3.png' %}" alt=""></li>   
+          </ul>
+        </div>  
+      </nav>
+
+
+
+      
+      
+      <main class="flex-fill">
+
+        <div class="container-fluid mt-3 mb-3">
+
+          <div class="row">
+            <div class="col-md-4 ml-2">
+              <div>
+               <b> Amount Spent:</b> <label style="color: chocolate;"> $ 35.00 </label>
+              </div>
+  
+            </div>
+            <div class="col-md-3 mt-2">
+  
+              <div class="container">
+                <div class="input-group date" data-provide="datepicker">
+                  <input type="text" class="form-control dateinput"><i class="fa fa-calendar fa-2x"></i>
+                  <div class="input-group-addon">
+                      <span class="glyphicon glyphicon-th"></span>
+                  </div>
+                 </div>
+              </div>
+  
+              </div>
+  
+              <div class="col-md-3 mt-2">
+  
+                <div class="container">
+                  <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control dateinput"><i class="fa fa-calendar fa-2x"></i>
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                   </div>
+                </div>
+    
+                </div>
+
+                <div class="col-md-1 mt-2 ">
+                  <button type="button" class="btn btn-primary  " style="border-radius: 50px;background-color: #0D3451;">SEARCH</button>
+
+                </div>
+  
+          </div>
+          
+        </div>
+
+
+
+        <div class="container-fluid mb-5 mt-5">
+
+          <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link " href="#">This week</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This month</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This year</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">All</a>
+            </li>
+          </ul>
+
+       </div>
+
+
+       <div class="container-fluid">
+         <div class="row mb-3">
+
+          <div class="col-md-3 ml-2">
+            <div>
+            <label style="color: #0D3451;"> <b> Transactions:</label></b> <label style="color: chocolate;"></label>
+            </div>
+          </div>
+
+          <div class="col-md-3 ml-2">
+            <div>
+            <label style="color: #0D3451;"> <b> Date Selected:</label></b> <label style="color: black;">8/5/2020 - 15/5/2020</label>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 ml-2">
+            <div>
+              <ul class="pagination pagination-sm">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-1 ml-2">
+            <button type="button" class="btn btn-primary  " style="border-radius: 50px;background-color: #0D3451;">DOWNLODE</button>
+
+          </div>
+
+         </div>
+
+       </div>
+  
+        
+        <div class="container-fluid mb-5">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead style="background-color: #E2EDFF;;">
+              <tr>
+                <th>Report Id</th>
+                <th>Date</th>
+                <th>Payment Party</th>
+                <th>Description</th>
+                <th>Amount</th>
+                
+              </tr>
+            </thead>
+            <tbody class="tbody" id="tbody" >
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+      
+  </main> 
+
+       <footer class="d-flex justify-content-center justify-content-lg-end " style="background-color:#F3F3F3 ;">
+        <nav class="navbar navbar-expand-sm  navbar-light  " style="background-color:#F3F3F3">
+          <ul class="navbar-nav  ">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Terms and Conditions</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy Policy</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link " href="#">Help</a>
+              
+            
+            <li class="nav-item">
+              <a class="nav-link " href="#">Tutorlabs Licenses</a>
+              
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Partners</a>
+            
+          </li>
+       
+          <li class="nav-item dropup">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Language
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Hindi</a>
+              <a class="dropdown-item" href="#">Bengali</a>
+            </div>
+          </li>
+          </ul>
+        </nav>
+  
+       
+       </footer>
+      </wrapper>
+      <script>
+        window.onload = function() {
+            homeCount();
+        };
+
+        function homeCount() {
+            const usr_id = 1
+            const tbody = document.getElementById("tbody")
+            fetch('http://localhost:8000/allreports/')
+                .then(function(response) {
+                    return response.json();
+                }).then(async function(data) {
+                     data.map(each => {
+                       var name  =  partyName(each.payment_party)
+                         if (each.payment_party == usr_id) {
+                             tbody.innerHTML += `<tr><td> ${each.report_id} </td> <td> ${each.date} </td> <td> ${name} </td><td> ${each.description} </td><td> ${each.amount} </td></tr>`
+                         }
+                     })
+                });
+        }
+
+         function partyName(user_id){
+            fetch(`http://localhost:8000/user/${user_id}`)
+            .then(function(response) {
+                return response.json();
+            }).then(function(data) {
+                return data.first_name
+            })
+        }
+      </script>
+</body>
+</html>

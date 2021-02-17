@@ -1,0 +1,114 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="{%static './css/registration/profile.css' %}">
+    <title>TutorLabs</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logos">
+            <a href=""></a><div class="title-brand">Tutor Labs</div>
+
+        </div>
+        </div>
+        <div class="label">
+            <ul>
+                <li><a>DASHBOARD</a></li>&emsp;
+                <li><a>MY CLASSES</a></li>&emsp;
+                <li><a>REPORTS</a></li>&emsp;
+                <li><a>MESSAGES</a></li>&emsp;
+                <li><img src="Assest/generic-avatar 3.png" alt="" /></li>&emsp;
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="left-side">
+            <img src="Assest/profile.jpg" alt="" />
+            <h6 class="upload">upload</h6>
+            <div class="center">
+                <h6>
+                    Upload profile for more Students to see your profile
+                </h6>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="blue title">
+                <h3><b>PROFILE</b></h3>
+            </div>
+            <form>
+                <div class="flex">
+                    <div class="form-left">
+                        <div class="form-inputs">
+                            <label for="fn"><b>Firstname</b></label>
+                            <input type="text" name="fname" id="fn" placeholder="Firstname" />
+                        </div>
+                        <div class="form-inputs">
+                            <label for="cn"><b>Country</b></label>
+                            <input type="text" name="country" id="cn" placeholder="Country" />
+                        </div>
+                        <div class="form-inputs">
+                            <label for="ph"><b>Phone</b></label>
+                            <input type="text" name="phone" id="ph" placeholder="Phone" />
+                        </div>
+                        <div class="form-inputs">
+                            <label for="skill"><b>Skills</b></label>
+                            <input type="text" name="skills" id="skil" placeholder="skills" />
+                        </div>
+                    </div>
+                    <div class="form-right">
+                        <div class="form-inputs">
+                            <label for="ln"><b>Lastname</b></label>
+                            <input type="text" name="lname" id="ln" placeholder="Lastname" />
+                        </div>
+                        <div class="form-inputs">
+                            <label for="st"><b>State</b></label>
+                            <select name="state" id="st" style="height: 2em; margin-top:0.5em">
+                                <option>TELANGANA</option>
+                                <option>Mumbai</option>
+
+                            </select>
+                        </div>
+                        <div class="form-inputs">
+                            <label for="sky"><b>Skype-ID</b></label>
+                            <input type="text" name="skype" id="sky" placeholder="Skype-ID" />
+                        </div>
+                        <div class="form-inputs">
+                            <label for="sky"><b>Year of Experience</b></label>
+                            <input type="text" name="exp" id="sky" placeholder="Enter in Number" />
+                        </div>
+                    </div>
+                </div>
+                &emsp;&emsp;&emsp;&emsp;<a href="profile_information"><input type="button" value="Save & Next" /></a>&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+                    <input type="button" value="Cancel" />
+            </form>
+
+
+        </div>
+        <div class="footer">
+            <ul>
+                <li>Terms and Conditions</li>
+                <li>|</li>
+                <li>Privacy Policy</li>
+                <li>|</li>
+                <li>Help</li>
+                <li>|</li>
+                <li>TutorLabs Licenses</li>
+                <li>|</li>
+                <li>Partners</li>
+                <li>|</li>
+                <li class="flex">
+                    <label for="Lang">Language</label>
+                    <h4 id="Lang">English</h4>
+                </li>
+            </ul>
+        </div>
+</body>
+
+</html>

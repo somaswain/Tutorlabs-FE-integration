@@ -1,0 +1,208 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="{%static '.css/registration/profile_information.css' %} ">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <wrapper class="d-flex flex-column">
+    <nav class="navbar navbar-expand-md  " style="background-color:  #0D3451;">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">CLASSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">MY TUTOR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">REPORTS</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link navlinkfont" href="#">MESSEGES</a>
+            </li>
+           
+            <li><a><img src="generic-avatar 3.png"  alt="..." ></a></li>   
+          </ul>
+        </div>  
+      </nav>
+
+
+
+      
+
+
+      
+      <main class="flex-fill">
+      <div class="container my-3">
+        <div class="card">
+          <div class="row">
+            
+            <div class="col-sm-3 " style="background-color: #E2EDFF;">
+              <ul class="nav nav-tabs flex-column "  role="tablist">
+                <li class="nav-item">
+                  
+                  <a class="nav-link mt-3 active" data-toggle="tab" style="color: #0D3451;" href="#myinfo"><b><i class='fas fa-square'></i>  My Info</b></a>
+                </li>
+                <li class="nav-item">
+                  
+                  <a class="nav-link mt-3" data-toggle="tab" style="color: #0D3451;" href="#companydetails"><b><i class='fas fa-square'></i>  Company details</b></a>
+                </li>
+                <li class="nav-item">
+                 
+                  <a class="nav-link mt-3 mb-2" data-toggle="tab" style="color: #0D3451;" href="#companycontacts"><b><i class='fas fa-square'></i>  Company contacts</b></a>
+                </li>
+                
+              </ul>  
+            </div>
+
+            <div class="col-sm-9">
+              <div class="mt-2 mb-1 ml-2">
+                <h3 style="color: #0D3451;">Profile</h3>
+              </div>
+              <div class="mr-3">
+              <hr style="color: darkgrey;">
+            </div>
+              <div class="tab-content">
+                <div id="myinfo" class="container tab-pane active">
+                  <div class="card mb-3">
+                  <div class="text-center mt-5"><img src="generic-avatar 2.png"  alt="..." ></div>
+                  <div class="text-center mb-5"><h5 style="color: darksalmon;">Uplode Profile</h5></div>
+                  <div class="container ml-5 mb-2">
+                    <h4>XYZ - Agency</h4>
+                    <h5>Alpha - Client</h5>
+                    <h4>Email</h4>
+                    <h5>Alpha@gmail.com</h5>
+                  </div>
+                  <div class="mr-5 ml-auto mb-3">
+                    <button type="button" class="btn btn-primary mx-5 my-2" 
+                    style="border-radius: 50px;background-color: #3062AD;width: 100px;">Edit</button>
+                  </div>
+
+                </div>
+               
+                </div>
+                <div id="companydetails" class="container tab-pane fade"><br>
+                  <form action="" class="mr-5">
+                    <div class="form-group">
+                      <label for="cname">Company Name</label>
+                      <input type="text" class="form-control" placeholder="XYZ - Agency" id="cname">
+                    </div>
+                    <div class="form-group">
+                      <label for="website">Website</label>
+                      <input type="text" class="form-control" placeholder="Xyz.xyz.com" id="website">
+                    </div>
+                    <div class="form-group">
+                      <label for="tagline">Tagline</label>
+                      <input type="text" class="form-control" placeholder="Alpha - Client" id="tagline">
+                    </div>
+                    <div class="form-group">
+                      <label for="description">Description</label>
+                      <input type="text" class="form-control" placeholder="" id="description">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary mb-3 float-right"
+                    style="border-radius: 50px;background-color: #3062AD;width: 100px;">Edit</button>
+                  
+                  </form>
+
+                </div>
+                
+                <div id="companycontacts" class="container tab-pane fade"><br>
+                  <form action="" class="mr-5">
+                    <div class="form-group">
+                      <label for="owner">Owner</label>
+                      <input type="text" class="form-control" placeholder="Alpha" id="owner">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" class="form-control" placeholder="+91 99XXXXX99" id="phone">
+                    </div>
+                    <div class="form-group">
+                      <label for="vatid">VAT ID</label>
+                      <input type="text" class="form-control" placeholder="Enter your VAT ID to enable VAT invoicing" id="vatid">
+                    </div>
+                    <div class="form-group">
+                      <label for="tzone">Time - Zone</label>
+                      <input type="text" class="form-control" placeholder="UTC+05:30 Mumbai, Kolkata, Chennai, New Delhi" id="tzone">
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Address</label>
+                      <input type="text" class="form-control" placeholder="India" id="address">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary mb-3 float-right"
+                    style="border-radius: 50px;background-color: #3062AD;width: 100px;">Edit</button>
+                  
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+     
+  </main> 
+
+
+
+       <footer class="d-flex justify-content-center justify-content-lg-end " style="background-color:#F3F3F3 ;">
+        <nav class="navbar navbar-expand-sm  navbar-light  " style="background-color:#F3F3F3">
+          <ul class="navbar-nav  ">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Terms and Conditions</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy Policy</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link " href="#">Help</a>
+              
+            
+            <li class="nav-item">
+              <a class="nav-link " href="#">Tutorlabs Licenses</a>
+              
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Partners</a>
+            
+          </li>
+       
+          <li class="nav-item dropup">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Language
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Hindi</a>
+              <a class="dropdown-item" href="#">Bengali</a>
+            </div>
+          </li>
+          </ul>
+        </nav>
+  
+       
+       </footer>
+      </wrapper>
+</body>

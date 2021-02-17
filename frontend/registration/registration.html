@@ -1,0 +1,162 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="{%static './css/registration/registration.css' %}">
+    <title>Hello, world!</title>
+    
+</head>
+
+<body>
+
+    <!-- Nav bar section -->
+
+    <nav class="navbar navbar-expand-md" style="background: #343C82;height: 60px;">
+        <div class=" navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link navtext pl-5" href="">
+                        <h1>Tutor Labs</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link nav-options pr-5" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-options pr-5" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-options pr-5" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-options pr-5" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-options pr-5" href="#">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Registration form section -->
+
+    <div class="container">
+
+
+        <div class="registration-form-section">
+
+            <!-- Registraion form left hand side -->
+
+            <div class="registration-form-left">
+                <div>
+                    <h1 class="heading-bolder">REGISTRATION</h1>
+                </div>
+                <div class="registration-start">
+                    <h1>Let's get you <span class="heading-bold">started...</span> </h1>
+                </div>
+                <div>
+                    <p class="textarea">Fill your registration form and start your journey with us</p>
+                </div>
+            </div>
+
+            <!-- Registraion form right hand side -->
+
+            <div class="registration-form-right">
+
+
+                <div class="reg-form-heading">
+                    <div class="registration--form__account">Register <span class="heading-bold">free account</span>
+                    </div>
+                    <div class="registration--form__text">or use the following methods</div>
+                </div>
+
+                <!-- Social media icons -->
+
+                <div class="reg-form-socialmedia d-flex justify-content-around m-4">
+                    <div> <a href=" https://www.google.com"><img src="./assets/images/google +.png" alt=""
+                                style="border-radius: 3%; height: 40px;"></a></div>
+                    <div><a href="https://www.facebook.com"><img src="./assets/images/fb.png" alt=""
+                                style="border-radius: 3%;height: 40px;"></a></div>
+                </div>
+
+                <!-- registered user login link -->
+
+                <div class=" reg-form-login-link">Already have an account? <a href="login">Log In</a> </div>
+
+                <!-- New user login form area -->
+
+                <div class="register-form-cover">
+                    <form class="register-form">
+                        <input class="p-2 m-2" type="text" placeholder="Full Name" />
+                        <input class="p-2 m-2" type="text" placeholder="Last Name" />
+                        <input class="p-2 m-2" type="text" placeholder="Enter Captcha" />
+                    </form>
+                </div>
+
+                <!-- Captcha area -->
+
+                <div class="reg-form-captcha">
+                    <div><img class="captcha-image" src="./assets/images/captcha.png" alt=" captcha
+                            image"></div>
+                    <div>
+                        <a href="#"><img class="captcha-reload mt-3" src="./assets/images/captcha refresh.svg"
+                                alt="captcha-reload"></a>
+                    </div>
+                </div>
+
+                <!-- Registration form submit button -->
+
+
+                <div class="reg-form-submit">
+                    <a href="profile"><button class="btn-primary btn-submit mt-3">Sign Up</button></a>
+                </div>
+
+
+                <div class="classreg-form-terms-conditions">
+                    By registering you confirm that you accept the <a href="Terms an Condition">Terms and Conditions</a>
+                    and <a href="Privacy Policy">Privacy Policy</a> .
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <a class="footer-alignment mt-2 ml-5" href="">Terms and Conditions</a>
+        <a class="footer-alignment mt-2 ml-5" href="">Privacy Policy</a>
+        <a class="footer-alignment mt-2 ml-5" href="">Help</a>
+        <a class="footer-alignment mt-2 ml-5" href="">Tutorlabs Licenses</a>
+        <a class="footer-alignment mt-2 ml-5" href="">Partners</a>
+        <div class="mt-3">Language</div>
+        <div class="mt-3">English</div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

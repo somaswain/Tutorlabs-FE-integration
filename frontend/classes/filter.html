@@ -1,0 +1,468 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet"href="{%static '/css/classes/filter.css' %}">
+</head>
+  <body>
+    <header>
+      <div class="logo">Tutor Labs</div>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">CLASSES</a></li>
+          <li><a href="#">MYTUTORS</a></li>
+          <li><a href="#">REPORTS</a></li>
+          <li><a href="#">MESSAGES</a></li>
+          <li>
+            <div id="notification-icon">
+              <img src="images/notification-icon.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                id="avatar"
+                src="images/generic-avatar.svg"
+                alt="user's photo"
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SEARCHBAR SECTION -->
+    <div class="searchbar">
+      <div id="slogan">
+        <p>Get Your Work Done!</p>
+      </div>
+      <div id="input">
+        <input type="text" placeholder="Search for Class.." />
+        <span id="search-icon"><i class="fas fa-search"></i></span>
+      </div>
+      <div id="button">
+        <button id="filter-btn"><span></span>Filter</button>
+      </div>
+    </div>
+    <!-- SEARCHBAR SECTION  ENDS HERE-->
+
+    <!-- FILTERS SECTION -->
+    <div class="filters">
+      <div class="filter-1">
+        <form action="" class="hourly-rate">
+          <p class="filter-title">Hourly Rate</p>
+          <img class="filterline" src="images/filterline.svg" alt="">
+          <ul class="filter_ul">
+            <li>
+              <label for="rate_1" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="rate_1"
+                  name="hourly_rate_&gt$5"
+                  value="&gt $5"
+                />
+                <span>&gt $5</span>
+              </label>
+            </li>
+            <li>
+              <label for="rate_2" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="rate_2"
+                  name="hourly_rate_$5 - $10"
+                  value="$5 - $10"
+                />
+                <span>$5 - $10</span>
+              </label>
+            </li>
+            <li>
+              <label for="rate_3" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="rate_3"
+                  name="hourly_rate_$10 - $100"
+                  value="$10 - $100"
+                />
+                <span>$10 - $100</span>
+              </label>
+            </li>
+            <li>
+              <label for="rate_4" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="rate_4"
+                  name="hourly_rate_$100&lt"
+                  value="$100&lt"
+                />
+                <span>$100&lt</span>
+              </label>
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="filter-2">
+        <form action="" class="talent">
+          <p class="filter-title">Talent</p>
+          <img class="filterline" src="images/filterline.svg" alt="">
+          <ul class="filter_ul">
+            <li>
+              <label for="talent_1" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="talent_1"
+                  name="talent_beginner"
+                  value="beginner"
+                />
+                <span>Beginner</span>
+              </label>
+            </li>
+            <li>
+              <label for="talent_2" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="talent_2"
+                  name="talent_intermediate"
+                  value="intermediate"
+                />
+                <span>Intermediate</span>
+              </label>
+            </li>
+            <li>
+              <label for="talent_3" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="talent_3"
+                  name="talent_expert"
+                  value="expert"
+                />
+                <span>Expert</span>
+              </label>
+            </li>
+            <li>
+              <label for="talent_4" class="checkbox">
+                <input
+                  type="checkbox"
+                  id="talent_4"
+                  name="talent_super-expert"
+                  value="super-expert"
+                />
+                <span>Super Expert</span>
+              </label>
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="filter-3" id="location">
+        <p class="filter-title">Location
+        </p>
+        <img class="filterline" src="images/filterline.svg" alt="">
+        <label for="location">
+          <select name="language" id="language">
+            <option value="english">ENGLISH</option>
+            <option value="german">GERMAN</option>
+            <option value="french">FRENCH</option>
+          </select>
+          <span class="filter-searchicon"
+            ><i class="fas fa-search filtericon"></i
+          ></span>
+        </label>
+      </div>
+
+      <div class="filter-4" id="language">
+        <p class="filter-title">Language</p>
+        <img class="filterline" src="images/filterline.svg" alt="">
+        <label for="language">
+          <select name="language" id="language">
+            <option value="english">ENGLISH</option>
+            <option value="german">GERMAN</option>
+            <option value="french">FRENCH</option>
+          </select>
+          <span class="filter-searchicon"
+            ><i class="fas fa-search filtericon"></i
+          ></span>
+        </label>
+      </div>
+    </div>
+    <!-- FILTER SECTION ENDS HERE -->
+
+    <!-- WRAPPER -->
+    <main>
+      <div class="wrapper">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+          <div class="skillsneeded">My Feed</div>
+          <div class="skillsneeded">Recommended</div>
+          <div class="skillsneeded">
+            Skills I Need <img id="pen" src="images/pen.svg" alt="" />
+          </div>
+          <div id="line"><img src="images/line.svg" alt="" /></div>
+          <ul class="courses">
+            <li><span>&gt</span>Website designing</li>
+            <li><span>&gt</span>Web & Mobile Design</li>
+            <li><span>&gt</span>Front end development</li>
+            <li><span>&gt</span>Machine Learning</li>
+            <li><span>&gt</span>Graphics & Design</li>
+            <li><span>&gt</span>Video Production</li>
+          </ul>
+        </div>
+        <!-- SIDEBAR ENDS -->
+
+        <!-- MAIN CONTENT AREA STARTS HERE-->
+        <div class="main-block">
+          <div class="allproposalsline">
+            <!-- <div id="frame1">
+                        Frame 1
+                    </div> -->
+
+            <ul class="tutor-status">
+              <li>All Proposals</li>
+              <li>Messaged</li>
+              <li>Hired</li>
+              <li>Invite Tutors</li>
+            </ul>
+          </div>
+          <img id="line-divider" src="images/longline.svg" alt="" />
+
+          <!-- TUTOR INFO SECTION -->
+
+          <a href="tutor_profile">
+            <div class="tutorinfo-section">
+                <!-- FIRST TUTOR -->
+                <div class="tutor" id="tutor1">
+                  <div class="avatar">
+                    <img src="images/avatar.svg" alt="" />
+                  </div>
+    
+                  <div class="tutorinfo">
+                    <div class="name">John Dawson</div>
+                    <img class="shortdividerline" src="images/short-line.svg" alt="" />
+                    <div class="designation">Java developer</div>
+                    <div>
+                      <span class="skills">Skills</span>
+                      <span class="skill">Core Java</span>
+                      <span class="skill">Angular.js</span>
+                    </div>
+                    <div class="qualification">
+                      <p>
+                        Studied from Harvard university <br />
+                        Certifictions earned: Google certication, Microsoft <br />
+                        Experiece: Worked as a full time tutor
+                      </p>
+                    </div>
+                    <div class="rating-line">
+                      <span>Rating</span>
+                      <div class="rating-stars">
+                        <img src="images/bluestar.svg" alt="" />
+                        <img src="images/bluestar.svg" alt="" />
+                        <img src="images/bluestar.svg" alt="" />
+                        <img src="images/bluestar.svg" alt="" />
+                        <img src="images/transparentstar.svg" alt="" />
+                      </div>
+                      <div class="rate">
+                        <span class="amount">$100</span>
+                        <span>Earned</span>
+                      </div>
+                      <div class="location">
+                        <img src="images/locationsymbol-vector.svg" alt="" />
+                        <span>Australia</span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div>
+                    <button class="invite-btn">+ Invite</button>
+                  </div>
+                </div>
+
+
+          </a>
+          
+
+            <!-- SECOND TUTOR -->
+            <div class="tutor" id="tutor2">
+              <div class="avatar">
+                <img src="images/avatar.svg" alt="" />
+              </div>
+
+              <div class="tutorinfo">
+                <div class="name">Muskaan Laungani</div>
+                <img class="shortdividerline" src="images/short-line.svg" alt="" />
+                <div class="designation">Front End Designing</div>
+                <div>
+                  <span class="skills">Skills</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS3</span>
+                </div>
+                <div class="qualification">
+                  <p>
+                    Studied from Pune University<br />
+                    Number of Projects done : 5<br />
+                    Experiece: Worked as a lead developer at INFO tech
+                  </p>
+                </div>
+                <div class="rating-line">
+                  <span>Rating</span>
+                  <div class="rating-stars">
+                    <img src="images/bluestar.svg" alt="" />
+                    <img src="images/bluestar.svg" alt="" />
+                    <img src="images/bluestar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                  </div>
+                  <div class="rate">
+                    <span class="amount">$200</span>
+                    <span>Earned</span>
+                  </div>
+                  <div class="location">
+                    <img src="images/locationsymbol-vector.svg" alt="" />
+                    <span>India</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button class="invite-btn">+ Invite</button>
+              </div>
+            </div>
+
+            <!-- THIRD TUTOR -->
+            <div class="tutor" id="tutor3">
+              <div class="avatar">
+                <img src="images/avatar.svg" alt="" />
+              </div>
+
+              <div class="tutorinfo">
+                <div class="name">Steven Rodigues</div>
+                <img class="shortdividerline" src="images/short-line.svg" alt="" />
+                <div class="designation">Graphic Designer</div>
+                <div>
+                  <span class="skills">Skills</span>
+                  <span class="skill">Illustration</span>
+                  <span class="skill">Adobe XD</span>
+                  <span class="skill">Logo designing</span>
+                </div>
+                <div class="qualification">
+                  <p>
+                    Studied from Harvard university <br />
+                    Certifictions earned: Google certication, Microsoft <br />
+                    Experiece: Worked as a full time tutor
+                  </p>
+                </div>
+                <div class="rating-line">
+                  <span>Rating</span>
+                  <div class="rating-stars">
+                    <img src="images/bluestar.svg" alt="" />
+                    <img src="images/bluestar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                  </div>
+                  <div class="rate">
+                    <span class="amount">$50</span>
+                    <span>Earned</span>
+                  </div>
+                  <div class="location">
+                    <img src="images/locationsymbol-vector.svg" alt="" />
+                    <span>USA</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button class="invite-btn">+ Invite</button>
+              </div>
+            </div>
+
+            <!-- FOURTH TUTOR -->
+            <div class="tutor" id="tutor4">
+              <div class="avatar">
+                <img src="images/avatar.svg" alt="" />
+              </div>
+
+              <div class="tutorinfo">
+                <div class="name">Shreyansh Sarkar</div>
+                <img class="shortdividerline" src="images/short-line.svg" alt="" />
+                <div class="designation">Full Stack developer</div>
+                <div>
+                  <span class="skills">Skills</span>
+                  <span class="skill">Core Java</span>
+                  <span class="skill">Angular.js</span>
+                  <span class="skill">PHP</span>
+                </div>
+                <div class="qualification">
+                  <p>
+                    Studied from Harvard university <br />
+                    Certifictions earned: Google certication, Microsoft <br />
+                    Experiece: Worked as a full time tutor
+                  </p>
+                </div>
+                <div class="rating-line">
+                  <span>Rating</span>
+                  <div class="rating-stars">
+                    <img src="images/bluestar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                    <img src="images/transparentstar.svg" alt="" />
+                  </div>
+                  <div class="rate">
+                    <span class="amount">$200</span>
+                    <span>Earned</span>
+                  </div>
+                  <div class="location">
+                    <img src="images/locationsymbol-vector.svg" alt="" />
+                    <span>India</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button class="invite-btn">+ Invite</button>
+              </div>
+            </div>
+            <!-- FOURTH TUTOR BLOCK ENDS HERE -->
+          </div>
+          <!-- CLASS "tutorinfo-section" ENDS HERE -->
+        </div>
+        <!-- CLASS "main-block" ENDS HERE-->
+      </div>
+      <!-- CLASS "wrapper" ENDS HERE-->
+    </main>
+
+    <footer>
+      <ul class="footer-items">
+        <li><a href="#">Terms and Conditions</a></li>
+        <li class="pipe">|</li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li class="pipe">|</li>
+        <li><a href="#">Hello</a></li>
+        <li class="pipe">|</li>
+        <li><a href="#">TutorLabs Licenses</a></li>
+        <li class="pipe">|</li>
+        <li><a href="#">Partners</a></li>
+        <li class="pipe">|</li>
+        <li id="language">
+          <label for="footer-language">LANGUAGE</label>
+          <select name="footer-language" id="footer-language">
+            <option value="english">ENGLISH</option>
+            <option value="german">GERMAN</option>
+            <option value="french">FRENCH</option>
+          </select>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
